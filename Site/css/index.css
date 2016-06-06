@@ -6,11 +6,11 @@ body {
 	overflow: auto;
 	padding: 80px;
 
-	background: #1EAFFF fixed; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#85C1E9, blue) fixed; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#85C1E9, blue) fixed; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#85C1E9, blue) fixed; /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#85C1E9, blue) fixed;
+	background: #1EAFFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#85C1E9, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#85C1E9, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#85C1E9, blue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#85C1E9, blue);
 
 }
 
@@ -35,4 +35,10 @@ div.boxed {
 img {
 	margin: 0px 15px 0px 0px;
 	float: left;
+}
+
+.verticalLine {
+	border-spacing: 0px 0px 0px 0px;
+	padding-right: 30px;
+	border-right: 2px solid white;
 }
