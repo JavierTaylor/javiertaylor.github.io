@@ -1,3 +1,8 @@
+$(window).load(function() {
+    $(".load").fadeOut("slow");
+    $(".wrapper").fadeOut("slow");
+})
+
 $(function() {
 	$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
