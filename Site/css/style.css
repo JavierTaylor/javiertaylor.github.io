@@ -4,6 +4,7 @@ body {
 	text-align: center;
 	overflow: auto;
 	padding: 80px;
+	position: relative;
 
 	background: #1EAFFF; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#85C1E9, blue); /* For Safari 5.1 to 6.0 */
