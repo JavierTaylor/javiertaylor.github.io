@@ -98,7 +98,7 @@ div.boxed {
 }
 
 img {
-	margin: 0px 15px 0px 0px;
+	margin: 0px 15px 0px 3px;
 	float: left;
 }
 
@@ -108,4 +108,7 @@ img {
 	border-right: 2px solid white;
 }
 
-
+hr {
+	border: 1px solid #B4B4B4 !important;
+	width: 60%;
+}
