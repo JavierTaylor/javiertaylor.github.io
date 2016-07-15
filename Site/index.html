@@ -178,6 +178,7 @@
 						</ul>		
 					</font></div>
 				</div>
+				<br>
 				<font size="3"><p>This is just a quick overview and summary of some of my experience. You can find my full descriptions on my <a 
 					id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank">Linkedin</a> profile. Also, you can click on the 
 					pictures in the descriptrions above to go to the websites of the organizations.</p></font>
@@ -187,42 +188,74 @@
 			<div class="boxed" id="know">
 				<center><h1>What I Know</h1></center>
 				<hr>
-				Apparently, nothing. 
+				Apparently, nothing.
 			</div>
 			<br><br>
 
 			<div class="boxed" id="projects">
 				<center><h1>Projects</h1></center>
 				<hr>
-				Coming soon. In the meantime, check out my GitHub (link at the bottom). It is the same thing, this will just make it look prettier.
+
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="misc/notepad.png" alt="..." id="thumb">
+							<div class="caption">
+							<center><h3>NotePad</h3></center>
+								<center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="NotePad is an Android app where you can create, edit, and share notes on your phone easily.">
+								Description</button>
+								<a href="http://javiertaylor.github.io/NotePad/" target="_blank" class="btn btn-primary" role="button">Project Site</a></center>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<font size="3"><p>I have included larger projects that I have worked on, discluding small bits of code and samples of my programming. To see all of my public code, 
+				check out my <a href="https://github.com/JavierTaylor" id="link" target="_blank">GitHub</a> account.
 				Also, this website is a project of mine, so you could look at it too. It was made from scratch (well, except for Bootstrap, Angular, and the fact
-				that I did not <i>make</i> HTML, CSS, of JavaScript).
+				that I did not <i>make</i> HTML, CSS, of JavaScript).</p></font>
 			</div>
 			<br><br>
 
 			<div class="boxed" id="contact">
 				<center><h1>Contact Me</h1></center>
 				<hr>
-				<form>
-					<label for="personName">Name:</label>
-					<input class="form-control" type="text" id="personName" ng-model="yourName" placeholder="Your Name" required="true">
-					<label for="email">Email:</label>
-					<input class="form-control" type="text" id="email" ng-model="theEmail" placeholder="Your Email" required="true">
-					<label for="subject">Subject:</label>
-					<input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true">
-					<br>
-					<label for="comment">Message:</label> 
-					<textarea class="form-control" type="text" rows="5" id="comment">
+				<div class="enclose">
+					<form class="next" onsubmit="onSubmitForm();" method="post" name="form">
+						<label for="personName">Name:</label>
+						<input class="form-control" type="text" id="personName" ng-model="yourName" placeholder="Your Name" required="true">
+						<label for="email">Email:</label>
+						<input class="form-control" type="email" id="email" ng-model="theEmail" placeholder="Your Email" required="true" name="_replyto">
+						<label for="subject">Subject:</label>
+						<input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true">
+						<label for="subject">7+16?:</label>
+						<input class="form-control" type="number" id="subject" ng-model="security" placeholder="Do some math" required="true" name="math">
+						<br>
+						<label for="comment">Message:</label> 
+						<textarea class="form-control" type="text" rows="5" id="comment" name="body">
+Subject: {{theSubject}}
 Hello Javier,
 	My name is {{yourName}} and I am contacting you because 
-					</textarea>
-					<br>
-					<input class="btn btn-primary" type="submit" value="Submit Contact">
-				</form>
-				<hr align="center" width="80%">
-		    	<center><h4>LinkedIn: <a id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank">https://www.linkedin.com/in/JavierTaylor</a><br>
-			    GitHub: <a id="link" href="https://github.com/JavierTaylor" target="_blank">https://github.com/JavierTaylor</a></h4><br></center>
+						</textarea>
+						<br>
+						<input class="btn btn-primary" type="submit" value="Submit Contact">
+					</form>
+					<div class="info">
+						<h4>Email:</h4>javierat@umich.edu<br><br>
+						<h4>Phone:</h4>(734)256-0957<br><br>
+						<h4>GitHub:</h4><a id="link" href="https://github.com/JavierTaylor" target="_blank">github.com/JavierTaylor</a><br>
+						<h4>Linkedin:</h4><a id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank">linkedin.com/in/JavierTaylor</a>
+					</div>
+				</div>
 			</div><br>
+
+			<!--action="https://formspree.io/javierat@umich.edu"<form action="https://formspree.io/javierat@umich.edu" method="post">
+  <input type="email" name="_replyto">
+  <textarea name="body"></textarea>
+  <input type="submit" value="Send">
+</form>-->
+
 			</center>
 		</div>
 	</body>

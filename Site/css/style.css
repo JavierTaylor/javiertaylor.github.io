@@ -8,8 +8,7 @@
 }
 
 .wrapper {
-    /* Size and position */
-	font-size: 25px; /* 1em */
+	font-size: 25px;
     width: 8em;
 	height: 8em;
     position: fixed;
@@ -18,7 +17,6 @@
     margin-top: -100px;
     margin-left: -100px;
 
-    /* Styles */
 	border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     border: 1em dashed rgba(133, 193, 233, 0.7);
@@ -111,4 +109,25 @@ img {
 hr {
 	border: 1px solid #B4B4B4 !important;
 	width: 60%;
+}
+
+#thumb {
+	float: none !important;
+	overflow: auto !important;
+	height: 150px !important;
+}
+
+.enclose {
+	margin: 1em;
+}
+
+.enclose .next {
+	width: 80%;
+	float: left;
+	clear: left;
+}
+
+.enclose .info {
+	width: 16%;
+	float: right;
 }
