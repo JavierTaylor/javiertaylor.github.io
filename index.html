@@ -61,7 +61,7 @@
 					year at the University of Michigan in Ann Arbor, MI. I grew up in Ypsilanti, MI, and my roots lie in the hills of Tennesse and the coasts of the Dominican Republic.
 					<h3><b id="link">How did I get here?</b></h3>Before coming to college I had never written a line of code in my life. I chose the University of Michigan 
 					because it was close, I loved the sports teams, and I thought I was going to be a mechanical engineer. But, when I took my first programming course, I 
-					realized that I had found something that I really enjoyed, so I threw myself in to it. I started going deeper in to the major, working in class and on my own 
+					realized that I had found something that I really enjoyed, so I threw myself into it. I started going deeper into the major, working in class and on my own 
 					to hone my programming abilities. I have worked to develop teamwork and leadership through group projects and organizations that I am a part of, and it has 
 					shaped the way that I look at development. I have taken courses ranging from entrepreneurial creativity to data structures and algorithms, and the more that I 
 					learn, the better I am at working through any problem that is thrown my way. I am currently a Software Engineering intern at Servant Systems Inc, a small company
@@ -190,9 +190,12 @@
 				<hr>
 				Apparently, nothing. Just kidding, this section is being built. 
 				<h3>
-					<span class="label label-default">C++</span>
-					<span class="label label-default">C</span>
-					<span class="label label-default">Matlab</span>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="My coursework at Michigan has been focused on programming, and has used C++ to teach it">C++</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="My Computer Organization course required the use of C for projects, so I learned it.">C</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="My first programming experience was with Matlab, and I still use it for mathematical computations">Matlab</button>
 				</h3>
 			</div>
 			<br><br>
@@ -211,6 +214,17 @@
 								data-content="NotePad is an Android app where you can create, edit, and share notes on your phone easily.">
 								Description</button>
 								<a href="http://javiertaylor.github.io/NotePad/" target="_blank" class="btn btn-primary" role="button">Project Site</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="misc/ios.png" alt="..." id="thumb">
+							<div class="caption">
+							<center><h3>iOS App</h3></center>
+								<center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="I am currently learning how to develop in XCode for iOS, and am making my first app. I will try to release it soon.">
+								Description</button></center>
 							</div>
 						</div>
 					</div>
@@ -233,13 +247,12 @@
 						<label for="email">Email:</label>
 						<input class="form-control" type="email" id="email" ng-model="theEmail" placeholder="Your Email" required="true" name="_replyto">
 						<label for="subject">Subject:</label>
-						<input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true">
+						<input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true" name="subject">
 						<label for="subject">7+16?:</label>
-						<input class="form-control" type="number" id="subject" ng-model="security" placeholder="Do some math" required="true" name="math">
+						<input class="form-control" type="number" id="num" ng-model="security" placeholder="Do some math" required="true" name="math">
 						<br>
 						<label for="comment">Message:</label> 
 						<textarea class="form-control" type="text" rows="5" id="comment" name="body">
-Subject: {{theSubject}}
 Hello Javier,
 	My name is {{yourName}} and I am contacting you because 
 						</textarea>
