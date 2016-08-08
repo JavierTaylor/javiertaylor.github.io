@@ -70,10 +70,10 @@ body {
 	position: relative;
 
 	background: #1EAFFF; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#85C1E9, blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#85C1E9, blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#85C1E9, blue); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#85C1E9, blue);
+    background: -webkit-linear-gradient(#85C1E9, #2471A3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#85C1E9, #2471A3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#85C1E9, #2471A3); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#85C1E9, #2471A3);
 
 }
 
@@ -115,6 +115,7 @@ hr {
 	float: none !important;
 	overflow: auto !important;
 	height: 150px !important;
+	margin-top: 10px;
 }
 
 .enclose {
