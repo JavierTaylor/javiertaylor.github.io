@@ -35,7 +35,14 @@
 	        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 5px;">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#about">About</a></li>
-	            <li><a href="#resume">Resume</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resume
+						<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#education">Education</a></li>
+						<li><a href="#experience">Experience</a></li>
+					</ul>
+				</li>
 	            <li><a href="#know">W.I.D.A.K.</a></li>
 	            <li><a href="#projects">Projects</a></li>
 	            <li><a href="#contact">Contact Me</a></li>
@@ -80,6 +87,8 @@
 			<div class="boxed" id="resume">
 				<center><h1>Resume</h1></center>
 				<hr>
+
+				<div id="education"></div>
 				<h2>Education</h2>
 				<div class="panel panel-primary">
 					<div class="panel-heading chev">
@@ -113,6 +122,7 @@
 				</div>
 				<br>
 
+				<div id="experience"></div>
 				<h2>Experience</h2>
 				<div class="panel panel-primary">
 					<div class = "panel-heading chev">
@@ -222,33 +232,55 @@
 				As I mentioned above, I like to code. I have attended <a id="link" href="https://en.wikipedia.org/wiki/MHacks" target="_blank">MHacks</a>, the 
 				UMichigan hackathon that has happened every semester for the past few years, and though I did not produce a full product with the team I lead,
 				I learned a lot and will be back to shoot for the prize. I am eager to learn any new technologies and languages thrown at me, and tinker
-				with new things that I run in to. I am working my way through <a id="link" href="http://cc2e.com/" target="_blank"><i>Code Complete</i></a>
+				with new things that I run in to. I am working my way through <a id="link" href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670" target="_blank"><i>Code Complete</i></a>
 				and am always looking to build excellence in my craft and learn as much as I can.
 				</font>
 				<h3>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="My coursework at Michigan has been focused on programming, and has used C++ to teach it. As such, I 
 								have gained a deep understanding of the libraries and tools within the language, and have used it a lot. Look on GitHub
-								to see my UniqueWord">C++</button>
+								to see my UniqueWord C++ project and get to know my programming style.">C++</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="I decided to learn how to use Android SDK outside of class, and have completed a simple app and have worked
-								on a few more. See NotePad below to get to know a bit more about what I have done">Android</button>
+								on a few more. See NotePad below to get to know a bit more about what I have done.">Android</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="My first programming experience was with Matlab, and I still use it for mathematical computations">Matlab</button>
+								data-content="My first programming experience was with Matlab, and I still use it for mathematical computations.">Matlab</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="My Computer Organization course required the use of C for projects, so I learned it and have used it
-								a moderate amount, both in class and outside of it">C</button>
+								a moderate amount, both in class and outside of it.">C</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="As a programmer I have learned how to use many different tools to enhance my productivity or the quality
+								of my code. I have learned how to use IDEs/SDKs such as Visual Studio, Android Studio, XCode, Matlab, and many more.
+								I have also learned how to use the Linux command line, text editors, and testing tools. I have also learned and used
+								agile development and other methodologies and practices for efficient planning and development.">Development Tools</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="Through coursework, clubs, organizations, sports teams, and events, I have learned how to work well with a
-								team to acheive its goal">Teamwork</button>
+								team to acheive its goal.">Teamwork</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="As a student heavily involved in extracurriculars, I have had the ability to lead diverse teams in the pursuit 
-								of academic, athletic, religious, and social goals, and have gained a lot from it">Leadership</button>
+								of academic, athletic, religious, and social goals, and have gained a lot from my experiences in the realm of leadership.">Leadership</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="I am currently learning how to use XCode to develop for iOS.">iOS</button>
 					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 								data-content="I have honed my Web Development skills at my internship at Servant Systems (see above for description). I am
-								able to use JavaScript, HTML, CSS, and web frameworks to make responsive, robust web pages such as this one. ">Web Development</button>
+								able to use JavaScript, HTML, CSS, and web frameworks such as Bootstrap to make responsive, robust web pages such as 
+								this one. ">Web Development</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="Through my internship at Servant Systems and from personal work I have learned a little bit about 
+								JavaScript. I am by no means an expert, but I am always learning. I have learned how to use the AngularJS and Jasmine
+								frameworks to expand my development and testing skills.">JavaScript</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="Through coursework and projects I have learned the value of testing, and through my internship I have
+								learned how to do it effectively. I have used frameworks such as Jasmine, Selenium, and Protractor to create automated
+								end to end web tests, Visual Studio to make unit tests and integration tests for .NET applications, and have learned
+								general testing concepts and practices that I have applied to personal, professional, and academic projects.">Software Testing</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="Through my work at the Transportation Research Institute (see Experience section) I have learned how to
+								conduct research in academia and in the technology industry.">Research</button>
+					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+								data-content="I am one of those highly unique people who knows how to use the Microsoft Office toolbox. In all 
+								seriousness, as a student, I have used Microsoft Office for most of my life.">Microsoft Office</button>
+
 				</h3>
 			</div>
 			<br><br>

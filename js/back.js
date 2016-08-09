@@ -29,7 +29,6 @@ $(function () {
 function onSubmitForm() {
 	if (document.form.math.value == 23) {
 		return true;
-		//document.form.action ="binding.html";//https://formspree.io/javierat@umich.edu
 	}
 	else {
 		alert("7 + 16 != "+ document.form.math.value);
