@@ -66,7 +66,8 @@ body {
 	font-family: times new roman;
 	text-align: center;
 	overflow: auto;
-	padding: 80px;
+	padding: 25px;
+	padding-top: 80px;
 	position: relative;
 
 	background: #1EAFFF; /* For browsers that do not support gradients */
@@ -106,19 +107,4 @@ hr {
 	overflow: auto !important;
 	height: 150px !important;
 	margin-top: 10px;
-}
-
-.enclose {
-	margin: 1em;
-}
-
-.enclose .next {
-	width: 80%;
-	float: left;
-	clear: left;
-}
-
-.enclose .info {
-	width: 16%;
-	float: right;
 }
