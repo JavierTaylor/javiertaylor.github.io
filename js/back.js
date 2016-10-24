@@ -26,7 +26,19 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
+function invisibility() {
+	element = document.getElementById("phoneNumber");
+	element1 = document.getElementById("phoneNumLabel");
+	element.style.display = 'none';
+	element1.style.display = 'none';
+}
+
 function onSubmitForm() {
+	if (document.form.phoneNumber.value != "") {
+		window.location = "http://www.defense.gov/Resources/Website-Feedback";
+		return false;
+	}
+
 	if (document.form.math.value == 23) {
 		return true;
 	}

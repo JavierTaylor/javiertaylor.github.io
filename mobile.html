@@ -17,7 +17,7 @@
 		<link rel="icon" href="misc/jt-min.png">
 	</head>
 
-	<body data-spy="scroll" data-offset="100">
+	<body data-spy="scroll" data-offset="100" onload="invisibility()">
 		<div class="load"></div>
 		<div class="wrapper"></div>
 
@@ -346,6 +346,8 @@
 						<input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true" name="subject">
 						<label for="subject">7+16?:</label>
 						<input class="form-control" type="number" id="num" ng-model="security" placeholder="Do some math" required="true" name="math">
+						<label for="subject" id="phoneNumLabel">Are you a bot? If no, do not fill in</label>
+						<input class="form-control" type="text" id="phoneNumber" ng-model="phoneNumber" name="phoneNumber">
 						<br>
 						<label for="comment">Message:</label> 
 						<textarea class="form-control" type="text" rows="5" id="comment" name="body">
