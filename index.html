@@ -1,406 +1,392 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="description" content="Online Porfolio and Resume for Javier Taylor">
-	    <meta name="author" content="Javier Taylor">
-	    <meta name="keywords" content="Resume, Javier, Taylor, Javer Taylor, Computer Science, Portfolio, Michigan">
-		<title>Javier Taylor</title>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="js/angular.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/back.js"></script>
-		<link rel="icon" href="misc/jt-min.png">
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Online Porfolio and Resume for Javier Taylor">
+        <meta name="author" content="Javier Taylor">
+        <meta name="keywords" content="Resume, Javier, Taylor, Javer Taylor, Computer Science, Portfolio, Michigan">
+        <title>Javier Taylor</title>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <link href="css/mobile.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/back.js"></script>
+        <link rel="icon" href="misc/jt-min.png">
+    </head>
 
-	<body data-spy="scroll" data-offset="100" onload="invisibility()">
-		<div class="load"></div>
-		<div class="wrapper"></div>
+    <body data-spy="scroll" data-offset="100" onload="invisibility()">
+        <div class="load"></div>
+        <div class="wrapper"></div>
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a class="navbar-brand" href="#top">Javier Taylor</a>
-	        </div>
-	        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 5px;">
-	          <ul class="nav navbar-nav">
-	            <li class="active"><a href="#about">About</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resume
-						<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#education">Education</a></li>
-						<li><a href="#experience">Experience</a></li>
-					</ul>
-				</li>
-	            <li><a href="#know">W.I.D.A.K.</a></li>
-	            <li><a href="#projects">Projects</a></li>
-	            <li><a href="#contact">Contact Me</a></li>
-	          </ul>
-	        </div>
-	      </div>
-	    </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#top">Javier Taylor</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 5px;">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resume
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                    </ul>
+                </li>
+                <li><a href="#know">W.I.D.A.K.</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-		<div class="container" id="top">
-			<p><h4>If you want to view the mobile site (which I would highly encourage if you are using a phone or tablet) then click 
-				<a href="mobile.html" id="link">here</a></h4></p>
-			<br><br>
-		    <left><img src="misc/jt-min.png" width="150" class="verticalLine"></left>
-		    <div>
-			    <p><h3>"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each
-			    	other, like a wall of mini stones."</h3><h4>- David Knuth</h4><h3>"My computer beat me at checkers, but I sure beat it at kickboxing!"</h3><h4>- Unknown </h4><p>
-			</div>
-			<br>
-			
-			<center>
-			<div class="boxed" id="about">
-				<center><h1>About Me</h1></center>
-				<hr><p>
-				<img src="misc/javier.png" alt="Javier Taylor" width="200" style="border: 5px solid black">
-					<h3><b id="link">Who am I?</b></h3>My name is Javier Taylor and I am an aspiring software engineer studying Computer Science as a rising senior
-					at the University of Michigan in Ann Arbor, MI. I grew up in Ypsilanti, MI, and my roots lie in the hills of Tennesse and the coasts of the Dominican Republic.
-					I am currently a Software Development Engineering Intern at Amazon.
-					<h3><b id="link">How did I get here?</b></h3>Before coming to college I had never written a line of code in my life. I chose the University of Michigan 
-					because it was close, I loved the sports teams, and I thought I was going to be a mechanical engineer. But, when I took my first programming course, I 
-					realized that I had found something that I really enjoyed, so I threw myself into it. I started going deeper into the major, working in class and on my own 
-					to hone my programming abilities. I have worked to develop teamwork and leadership through group projects and organizations that I am a part of, and it has 
-					shaped the way that I look at development. I have taken courses ranging from entrepreneurial creativity to operating systems, and the more that I 
-					learn, the better I am at working through any problem that is thrown my way.
-					<h3><b id="link">What should you know about me?</b></h3>I love to program. I hope that will become obvious to you when you look at all that I have to show you. 
-					But, I will not pretend that is the only thing that I love to do, as that would be unfortunate. I love to travel, explore, and hang out with friends, preferably 
-					all together. I have been to many parts of the US, though some of my favorite places to go are on the sand dunes and shores of the Great Lakes. I love to sail, 
-					to read, to eat good food, and to watch sports games. I love cars, camping, and physical activity, such as playing football, soccer, basketball, or rugby, or lifting weights and exercising. 
-					I am passionate about my Christian faith and I am deeply involved in it and in representing its ideals to the world. I strive to work hard and 
-					be honest in all that I do, and to serve others with my actions and relations. 
-					<h3><b id="link">Why are you here?</b></h3>Clearly, I do not know why you are here. Maybe you are a recruiter, maybe you are a friend, maybe you saw my GitHub
-					and followed a link, or maybe you just randomly found my website while surfing the Web. Whatever it is, I would just like to show you a little bit about myself. There are links at the top to different sections, so just scroll around and see if there is anything you like. Enjoy!
-				</p>
-			</div>
-		
-			<br><br>
-			<div class="boxed" id="resume">
-				<center><h1>Resume</h1></center>
-				<hr>
+        <div class="container" id="top">
+            <img src="misc/jt-min.png" width="150" class="verticalLine">
+            <div>
+                <p><h3>"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each
+                    other, like a wall of mini stones."</h3><h4>- David Knuth</h4><h3>"My computer beat me at checkers, but I sure beat it at kickboxing!"</h3><h4>- Unknown </h4><p>
+            </div>
+            <br>
+            <center>
+            <div class="boxed" id="about">
+                <center><h1>About Me</h1></center>
+                <hr><p>
+                <center><img src="misc/javier.png" alt="Javier Taylor" height="300" style="border: 5px solid black"></center>
+                <br>
+                <div class="panel panel-default">
+                    <h3><b id="link">Who am I?</b></h3>My name is Javier Taylor and I am an aspiring software engineer studying Computer Science as a rising senior
+                    at the University of Michigan in Ann Arbor, MI. I grew up in Ypsilanti, MI, and my roots lie in the hills of Tennesse and the coasts of the Dominican Republic.
+                    I am currently a Software Development Engineer Intern at Amazon.
+                    <h3><b id="link">How did I get here?</b></h3>Before coming to college I had never written a line of code in my life. I chose the University of Michigan 
+                    because it was close, I loved the sports teams, and I thought I was going to be a mechanical engineer. But, when I took my first programming course, I 
+                    realized that I had found something that I really enjoyed, so I threw myself into it. I started going deeper into the major, working in class and on my own 
+                    to hone my programming abilities. I have worked to develop teamwork and leadership through group projects and organizations that I am a part of, and it has 
+                    shaped the way that I look at development. I have taken courses ranging from entrepreneurial creativity to operating systems, and the more that I 
+                    learn, the better I am at working through any problem that is thrown my way.
+                    <h3><b id="link">What should you know about me?</b></h3>I love to program. I hope that will become obvious to you when you look at all that I have to show you. 
+                    But, I will not pretend that is the only thing that I love to do, as that would be unfortunate. I love to travel, explore, and hang out with friends, preferably 
+                    all together. I have been to many parts of the US, though some of my favorite places to go are on the sand dunes and shores of the Great Lakes. I love to sail, 
+                    to read, to eat good food, and to watch sports games. I love cars, camping, and physical activity, such as playing football, soccer, basketball, or rugby, or lifting weights and exercising. 
+                    I am passionate about my Christian faith and I am deeply involved in it and in representing its ideals to the world. I strive to work hard and 
+                    be honest in all that I do, and to serve others with my actions and relations. 
+                    <h3><b id="link">Why are you here?</b></h3>Clearly, I do not know why you are here. Maybe you are a recruiter, maybe you are a friend, maybe you saw my GitHub
+                    and followed a link, or maybe you just randomly found my website while surfing the Web. Whatever it is, I would just like to show you a little bit about myself. There are links at the top to different sections, so just scroll around and see if there is anything you like. Enjoy!
+                </div>
+                </p>
+            </div>
+        
+            <br><br>
+            <div class="boxed" id="resume">
+                <center><h1>Resume</h1></center>
+                <hr>
 
-				<div id="education"></div>
-				<h2>Education</h2>
-				<div class="panel panel-primary">
-					<div class="panel-heading chev">
-						<div>
-							<font size="3"><span><b>University of Michigan</b></span>
-							<span class="pull-right">
-								<i>2014 - 2018</i>
-							</span></font>
-						</div>
-					</div>
-					<div class="panel-body"><font size="3">
-						<span class="pull-right">
-							<a href="https://www.umich.edu" target="_blank"><img src="misc/m-min.png" width="200"></a>
-						</span>
-						<b>Computer Science, B.S.E.</b><br>
-						<b>Minor in Entrepreneurship</b><br><br>
-						Relevant Course Subjects:
-						<ul style="list-style: circle;">
-							<li>Operating Systems</li>
-							<li>Computer Security</li>
-							<li>Web Database and Information Systems</li>
-							<li>Data Structures and Algorithms</li>
-							<li>Computer Organization</li>
-							<li>Digital Logic Design</li>
-							<li>Computational Theory</li>
-							<li>Entrepreneurial Business Basics</li>
-							<li>Entrepreneurial Creativity</li>
-							<li>Venture/Customer Analysis</li>
-							<li>Linear Algebra</li>
-							<li>Discrete Mathematics</li>
-							<li>Statistics and Data Analysis</li>
-							<li>Engineering Design-Build-Test: Underwater Vehicle Design</li>
-							<li>Technical Communication</li>
-							<li>Research Ethics</li>
-						</ul>
-					</font></div>
-				</div>
-				<br>
+                <div id="education"></div>
+                <h2>Education</h2>
+                <div class="panel panel-primary">
+                    <div class="panel-heading chev">
+                        <div>
+                            <font size="3"><span><b>University of Michigan</b></span>
+                            <span class="pull-right">
+                                <i>2014 - 2018</i>
+                            </span></font>
+                        </div>
+                    </div>
+                    <div class="panel-body"><font size="3">
+                        <center><a href="https://www.umich.edu" target="_blank"><img src="misc/m-min.png" width="200"></a></center><br>
+                        <b>Computer Science, B.S.E.</b><br>
+                        <b>Minor in Entrepreneurship</b><br><br>
+                        Relevant Course Subjects:
+                        <ul style="list-style: circle;">
+                            <li>Operating Systems</li>
+                            <li>Computer Security</li>
+                            <li>Web Database and Information Systems</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Computer Organization</li>
+                            <li>Digital Logic Design</li>
+                            <li>Computational Theory</li>
+                            <li>Entrepreneurial Business Basics</li>
+                            <li>Entrepreneurial Creativity</li>
+                            <li>Venture/Customer Analysis</li>
+                            <li>Linear Algebra</li>
+                            <li>Discrete Mathematics</li>
+                            <li>Statistics and Data Analysis</li>
+                            <li>Engineering Design-Build-Test: Underwater Vehicle Design</li>
+                            <li>Technical Communication</li>
+                            <li>Research Ethics</li>
+                        </ul>
+                    </font></div>
+                </div>
+                <br>
 
-				<div id="experience"></div>
-				<h2>Experience</h2>
-				<div class="panel panel-primary">
-					<div class = "panel-heading chev">
-						<div>
-							<font size="3"><span><b>Amazon.com</b></span>
-							<span class="pull-right">
-								<i>May 2017-Present</i>
-							</span></font>
-						</div>
-					</div>
-					<div class="panel-body"><font size="3">
-						<span class="pull-right">
-							<a href="https://www.amazon.com/" target="_blank"><img src="misc/amazon.png" width="200"></a>
-						</span><br>
-						<b>Software Development Engineering Intern</b><br>
-						<ul style="list-style: circle;">
-						</ul>
-					</font></div>
-				</div>
-				<div class="panel panel-primary">
-					<div class = "panel-heading chev">
-						<div>
-							<font size="3"><span><b>Servant Systems</b></span>
-							<span class="pull-right">
-								<i>May-Aug. 2016</i>
-							</span></font>
-						</div>
-					</div>
-					<div class="panel-body"><font size="3">
-						<span class="pull-right">
-							<a href="http://www.servantsystems.com/" target="_blank"><img src="misc/ssi.png" width="200"></a>
-						</span>
-						<b>Software Engineering Intern</b><br>
-						<ul style="list-style: circle;">
-							<li>Worked with a team of Software Engineers to create software systems for franchise customers through the design, 
-							implementation, and testing of projects using agile development methodology</li>
-							<li>Utilized C#, JavaScript, and more for developing and testing alonside tools such as Visual Studio and Protractor</li>
-						</ul>
-					</font></div>
-				</div>
-				<div class="panel panel-primary">
-					<div class = "panel-heading chev">
-						<div>
-							<font size="3"><span><b>TrailTuff Nets, LLC</b></span>
-							<span class="pull-right">
-								<i>July 2012-Present</i>
-							</span></font>
-						</div>
-					</div>
-					<div class="panel-body"><font size="3">
-						<span class="pull-right">
-							<a href="http://www.trailtuffnets.com/" target="_blank"><img src="misc/ttn.png" width="200"></a>
-						</span>
-						<b>Co-Founder</b><br>
-						<ul style="list-style: circle;">
-							<li>Co-Founded small company that produces polypropylene cargo nets for off road vehicles</li>
-							<li>Designed website and product, managed products and orders, and worked to streamline processes</li>
-						</ul>		
-					</font></div>
-				</div>
-				<div class="panel panel-primary">
-					<div class = "panel-heading chev">
-						<div>
-							<font size="3"><span><b>Michigan Research Community</b></span>
-							<span class="pull-right">
-								<i>Sept. 2015-April 2016</i>
-							</span></font>
-						</div>
-					</div>
-					<div class="panel-body"><font size="3">
-						<span class="pull-right">
-							<a href="https://lsa.umich.edu/mrc" target="_blank"><img src="misc/m-min.png" width="150"></a>
-						</span>
-						<b>Peer Mentor and Study Group Leader</b><br>
-						<ul style="list-style: circle;">
-							<li>Organized and led activities to build community, led first year students through transition to college and research</li>
-							<li>Led study group for Engineering 101: Introduction to Computers and Computing for the Michigan Research Community and
-							the Women in Science and Engineering Residence Program</li>
-							<li>Planned lessons, held exam review sessions and office hours, reviewed code, and walked through basic programming concepts</li>
-						</ul>		
-					</font></div>
-				</div>
-				<div class="panel panel-primary">
-					<div class = "panel-heading chev">
-						<div>
-							<font size="3"><span><b>University of Michigan Transportation Research Institute</b></span>
-							<span class="pull-right">
-								<i>Sept. 2014-April 2015</i>
-							</span></font>
-						</div>
-					</div>
-					<div class="panel-body"><font size="3">
-						<span class="pull-right">
-							<a href="http://www.umich.edu/~driving/" target="_blank"><img src="misc/umtri.png" width="200"></a>
-						</span>
-						<b>Research Assistant in Driver Interface Group</b><br>
-						<ul style="list-style: circle;">
-							<li>Helped to run experiments, assisted in report drafting, reviewing, and editing, coded scenarios 
-							for MiniSim driving simulator for experimental use</li>
-							<li>Worked in teams to draft experiment reports, author simulator experiments, and accomplish all 
-							experiment related tasks. Learned teamwork, research methods, system optimization concepts</li>
-						</ul>		
-					</font></div>
-				</div>
-				<br>
-				<font size="3"><p>This is just a quick overview and summary of some of my experience. You can find my full descriptions on my <a 
-					id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank">Linkedin</a> profile. Also, you can click on the 
-					pictures in the descriptions above to go to the websites of the organizations. Click <a id="link" href="misc/resume.pdf" target="_blank">
-					here</a> for my resume in PDF format.</p></font>
-			</div>
-			<br><br>
+                <div id="experience"></div>
+                <h2>Experience</h2>
+                <div class="panel panel-primary">
+                    <div class = "panel-heading chev">
+                        <div>
+                            <font size="3"><span><b>Amazon.com</b></span>
+                            <span class="pull-right">
+                                
+                            </span></font>
+                        </div>
+                    </div>
+                    <div class="panel-body"><font size="3">
+                        <center><a href="https://www.amazon.com/" target="_blank"><img src="misc/amazon.png" width="200"></a></center><br>
+                        <b>Software Development Engineer Intern<br>
+                        <i>May 2017-Present</i></b><br>
+                    </font></div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class = "panel-heading chev">
+                        <div>
+                            <font size="3"><span><b>Servant Systems</b></span>
+                            <span class="pull-right">
+                                
+                            </span></font>
+                        </div>
+                    </div>
+                    <div class="panel-body"><font size="3">
+                        <center><a href="http://www.servantsystems.com/" target="_blank"><img src="misc/ssi.png" width="200"></a></center><br>
+                        <b>Software Engineering Intern<br>
+                        <i>May-Aug. 2016</i></b><br>
+                        <ul style="list-style: circle;">
+                            <li>Worked on a team of Software Engineers and Interns to develop and test software for companies in the franchising industry 
+                            using agile process management and scrum methodology for development</li>
+                            <li> Used Jasmine, Protractor, and Visual Studio testing tools to build automated test suites for complex web apps developed with .NET framework</li>
+                            <li>Wrote production-level code using JavaScript, AngularJS, NodeJS, and C#</li>
+                        </ul>
+                    </font></div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class = "panel-heading chev">
+                        <div>
+                            <font size="3"><span><b>TrailTuff Nets, LLC</b></span></font>
+                        </div>
+                    </div>
+                    <div class="panel-body"><font size="3">
+                        <center><a href="http://www.trailtuffnets.com/" target="_blank"><img src="misc/ttn.png" width="200"></a></center><br>
+                        <b>Co-Founder<br>
+                        <i>July 2012-Present</i></b><br>
+                        <ul style="list-style: circle;">
+                            <li>Co-Founded small company that produces polypropylene cargo nets for Jeeps, marketed for off-roading</li>
+                            <li>Produces and sells nets for roughly 65% profit to domestic and international customers</li>
+                            <li>Designed website and product, managed products and orders, and worked to streamline processes</li>
+                        </ul>       
+                    </font></div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class = "panel-heading chev">
+                        <div>
+                            <font size="3"><span><b>Michigan Research Community</b></span></font>
+                        </div>
+                    </div>
+                    <div class="panel-body"><font size="3">
+                        <center><a href="https://lsa.umich.edu/mrc" target="_blank"><img src="misc/m-min.png" width="150"></a></center><br>
+                        <b>Peer Mentor and Study Group Leader<br>
+                        <i>Sept. 2015-April 2016</i></b><br>
+                        <ul style="list-style: circle;">
+                            <li>Organized and led activities to build community, led first year students through transition to college and research</li>
+                            <li>Led study group for Engineering 101: Introduction to Computers and Computing for the Michigan Research Community and
+                            the Women in Science and Engineering Residence Program</li>
+                            <li>Planned lessons, held exam review sessions and office hours, reviewed code, and walked through basic programming concepts</li>
+                        </ul>       
+                    </font></div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class = "panel-heading chev">
+                        <div>
+                            <font size="3"><span><b>University of Michigan Transportation Research Institute</b></span></font>
+                        </div>
+                    </div>
+                    <div class="panel-body"><font size="3">
+                        <center><a href="http://www.umich.edu/~driving/" target="_blank"><img src="misc/umtri.png" width="200"></a></center><br>
+                        <b>Research Assistant in Driver Interface Group<br>
+                        <i>Sept. 2014-April 2015</i></b><br>
+                        <ul style="list-style: circle;">
+                            <li>Helped to run experiments, assisted in report drafting, reviewing, and editing, coded scenarios 
+                            for MiniSim driving simulator for experimental use</li>
+                            <li>Worked in teams to draft experiment reports, author simulator experiments, and accomplish all 
+                            experiment related tasks. Learned teamwork, research methods, system optimization concepts</li>
+                            <li>Co-author: Green, P., Echols, S., and Taylor, J. (2014). Crash Warning Systems: The Human Factors</li>
+                        </ul>       
+                    </font></div>
+                </div>
+                <br>
+                <font size="3"><p>This is just a quick overview and summary of some of my experience. You can find my full descriptions on my <a 
+                    id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank">Linkedin</a> profile. Also, you can click on the 
+                    pictures in the descriptions above to go to the websites of the organizations. Click <a id="link" href="misc/resume.pdf" target="_blank">
+                    here</a> for my resume in PDF format.</p></font>
+            </div>
+            <br><br>
 
-			<div class="boxed" id="know">
-				<center><h1>What I Do And Know</h1></center>
-				<hr>
+            <div class="boxed" id="know">
+                <center><h1>What I Do And Know</h1></center>
+                <hr>
+                <div class="panel panel-default">
+                    <font size="3">As a student at the University of Michigan I have had the opportunity to get involved in many activities, take a bunch of cool 
+                    courses, and to work with others to learn a lot. Through the clubs, communities, group projects, jobs, and classes that I have been in, I have 
+                    learned a ton about programming, software development, math, engineering, leadership, teamwork, and many other skills that have made me a better
+                    worker and citizen.<br><br>
+                    I am involved in multiple student groups on campus. One of them is <a id="link" href="https://code-m.eecs.umich.edu/" target="_blank">Code-M</a>, formerly CSE Scholars, a group that works to spread knowledge
+                    about tech related topics by hosting company events, tech talks, tutoring sessions, and working on collaborative projects. I have been an active member and
+                    will be the president for the 2017-18 school year. I am also heavily involved in University Christian Outreach, a religious club on campus. I am on the Mission Core team, where I work 
+                    to plan, lead, and run events, and I will be the co-leader for the 2017-18 school year. I have been involved in IM sports, regularly attend campus events, 
+                    am a semi-regular patron of the <a id="link" href="http://www.lib.umich.edu/computer-video-game-archive" target="_blank">Computer and Video Game Archive</a>,
+                    and just generally try to <a id="link" href="https://www.youtube.com/watch?v=KAboXV6vVTU" target="_blank">have fun</a>.
+                    <br><br>
+                    As I mentioned above, I like to code. I have attended <a id="link" href="https://en.wikipedia.org/wiki/MHacks" target="_blank">MHacks</a>, the 
+                    UMichigan hackathon that has happened every semester for the past few years, and though I did not produce a full product with the team I lead,
+                    I learned a lot and will be back to shoot for the prize. I am eager to learn any new technologies and languages thrown at me, and tinker
+                    with new things that I run in to. I am working my way through <a id="link" href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670" target="_blank"><i>Code Complete</i></a>
+                    and am always looking to build excellence in my craft and learn as much as I can.
+                    </font>
+                </div>
+                <h3><center>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="My coursework at Michigan has been focused on programming, and has used C++ to teach it. As such, I 
+                                have gained a deep understanding of the libraries and tools within the language, and have used it a lot. Look on GitHub
+                                to see my UniqueWord C++ project and get to know my programming style.">C++</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="I decided to learn how to use Android SDK outside of class, and have completed a simple app and have worked
+                                on a few more. See NotePad below to get to know a bit more about what I have done.">Android</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="For one of my classes, Intro to Computer Security (EECS 388), I learned Python to work on class projects
+                                dealing with cryptography, and have expanded my knowledge with personal study, projects, and more classes, such as EECS 485,
+                                Web Database and Information Systems, in which we use Flask to build web apps.">Python</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="My Computer Organization course required the use of C for projects, so I learned it and have used it
+                                a moderate amount, both in class and outside of it.">C</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="As a programmer I have learned how to use many different tools to enhance my productivity or the quality
+                                of my code. I have learned how to use IDEs/SDKs such as Visual Studio, Android Studio, XCode, Matlab, and many more.
+                                I have also learned how to use the Linux command line, text editors, and testing tools. I have also learned and used
+                                agile development and other methodologies and practices for efficient planning and development.">Development Tools</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="Through coursework, clubs, organizations, sports teams, and events, I have learned how to work well with a
+                                team to acheive its goal.">Teamwork</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="As a student heavily involved in extracurriculars, I have had the ability to lead diverse teams in the pursuit of academic, athletic, religious, and social goals, and have gained a lot from my experiences in the realm of leadership.">Leadership</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="My first programming experience was with Matlab, and I still use it for mathematical computations.">Matlab</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="I am currently learning how to use XCode to develop for iOS.">iOS</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="I have honed my Web Development skills at my internship at Servant Systems (see above for description). I am
+                                able to use JavaScript, HTML, CSS, and web frameworks such as Bootstrap, AngularJS, Ajax, and Flask to make responsive, robust 
+                                web pages such as this one. ">Web Development</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="Through my internship at Servant Systems, personal work, and classwork, I have learned a little bit 
+                                about JavaScript. I am by no means an expert, but I am always learning. I have learned how to use the AngularJS, Ajax, and 
+                                Jasmine frameworks to expand my development and testing skills.">JavaScript</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="Through coursework and projects I have learned the value of testing, and through my internship I have
+                                learned how to do it effectively. I have used frameworks such as Jasmine, Selenium, and Protractor to create automated
+                                end to end web tests, Visual Studio to make unit tests and integration tests for .NET applications, and have learned
+                                general testing concepts and practices that I have applied to personal, professional, and academic projects.">Software Testing</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="Through my work at the Transportation Research Institute (see Experience section) I have learned how to
+                                conduct research in academia and in the technology industry.">Research</button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="I am one of those highly unique people who knows how to use the Microsoft Office toolbox. In all 
+                                seriousness, as a student, I have used Microsoft Office for most of my life.">Microsoft Office</button>
+                </center></h3>
+            </div>
+            <br><br>
 
-				<font size="3">As a student at the University of Michigan I have had the opportunity to get involved in many activities, take a bunch of cool 
-				courses, and to work with others to learn a lot. Through the clubs, communities, group projects, jobs, and classes that I have been in, I have 
-				learned a ton about programming, software development, math, engineering, leadership, teamwork, and many other skills that have made me a better
-				worker and citizen.<br><br>
-				I am involved in multiple student groups on campus. One of them is <a id="link" href="http://web.eecs.umich.edu/~cseschol/" target="_blank">Code-M</a>, formerly CSE Scholars, 
-				a group that works to spread knowledge about tech related topics by hosting company events, tech talks, tutoring sessions, and working on collaborative projects. 
-				I am an active member of the External Outreach Committee. I am also heavily involved in University Christian Outreach. I am on the Mission Core team, where I work 
-				to plan, lead, and run events. I am involved in IM sports, regularly attend campus events, both tech and non-tech, and am a semi-regular 
-				patron of the <a id="link" href="http://www.lib.umich.edu/computer-video-game-archive" target="_blank">Computer and Video Game Archive.</a><br><br>
-				As I mentioned above, I like to code. I have attended <a id="link" href="https://en.wikipedia.org/wiki/MHacks" target="_blank">MHacks</a>, the 
-				UMichigan hackathon that has happened every semester for the past few years, and though I did not produce a full product with the team I lead,
-				I learned a lot and will be back to shoot for the prize. I am eager to learn any new technologies and languages thrown at me, and tinker
-				with new things that I run in to. I am working my way through <a id="link" href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670" target="_blank"><i>Code Complete</i></a>
-				and am always looking to build excellence in my craft and learn as much as I can.
-				</font>
-				<h3>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="My coursework at Michigan has been focused on programming, and has used C++ to teach it. As such, I 
-								have gained a deep understanding of the libraries and tools within the language, and have used it a lot. Look on GitHub
-								to see my UniqueWord C++ project and get to know my programming style.">C++</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="I decided to learn how to use Android SDK outside of class, and have completed a simple app and have worked
-								on a few more. See NotePad below to get to know a bit more about what I have done.">Android</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="For one of my classes, Intro to Computer Security (EECS 388), I learned Python to work on class projects
-								dealing with cryptography, and have expanded my knowledge with personal study, projects, and more classes, such as EECS 485,
-								Web Database and Information Systems, in which we use Flask to build web apps.">Python</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="My Computer Organization course required the use of C for projects, so I learned it and have used it
-								a moderate amount, both in class and outside of it.">C</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="As a programmer I have learned how to use many different tools to enhance my productivity or the quality
-								of my code. I have learned how to use IDEs/SDKs such as Visual Studio, Android Studio, XCode, Matlab, and many more.
-								I have also learned how to use the Linux command line, text editors, and testing tools. I have also learned and used
-								agile development and other methodologies and practices for efficient planning and development.">Development Tools</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="Through coursework, clubs, organizations, sports teams, and events, I have learned how to work well with a
-								team to acheive its goal.">Teamwork</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="As a student heavily involved in extracurriculars, I have had the ability to lead diverse teams in the pursuit of academic, athletic, religious, and social goals, and have gained a lot from my experiences in the realm of leadership.">Leadership</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="My first programming experience was with Matlab, and I still use it for mathematical computations.">Matlab</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="I am currently learning how to use XCode to develop for iOS.">iOS</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="I have honed my Web Development skills at my internship at Servant Systems (see above for description). I am
-								able to use JavaScript, HTML, CSS, and web frameworks such as Bootstrap, AngularJS, Ajax, and Flask to make responsive, robust 
-								web pages such as this one. ">Web Development</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="Through my internship at Servant Systems, personal work, and classwork, I have learned a little bit 
-								about JavaScript. I am by no means an expert, but I am always learning. I have learned how to use the AngularJS, Ajax, and 
-								Jasmine frameworks to expand my development and testing skills.">JavaScript</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="Through coursework and projects I have learned the value of testing, and through my internship I have
-								learned how to do it effectively. I have used frameworks such as Jasmine, Selenium, and Protractor to create automated
-								end to end web tests, Visual Studio to make unit tests and integration tests for .NET applications, and have learned
-								general testing concepts and practices that I have applied to personal, professional, and academic projects.">Software Testing</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="Through my work at the Transportation Research Institute (see Experience section) I have learned how to
-								conduct research in academia and in the technology industry.">Research</button>
-					<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="I am one of those highly unique people who knows how to use the Microsoft Office toolbox. In all 
-								seriousness, as a student, I have used Microsoft Office for most of my life.">Microsoft Office</button>
+            <div class="boxed" id="projects">
+                <center><h1>Projects</h1></center>
+                <hr>
 
-				</h3>
-			</div>
-			<br><br>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="misc/notepad.png" alt="..." id="thumb">
+                            <div class="caption">
+                            <center><h3>NotePad</h3></center>
+                                <center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="NotePad is an Android app where you can create, edit, and share notes on your phone easily.">
+                                Description</button>
+                                <a href="http://javiertaylor.github.io/NotePad/" target="_blank" class="btn btn-primary" role="button">Project Site</a></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="misc/web.png" alt="..." id="thumb">
+                            <div class="caption">
+                            <center><h3>Personal Website</h3></center>
+                                <center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="Obviously, you have seen my website. But, have you seen the code for it? Just click to the right or go to my GitHub. I made this
+                                site essentially from scratch (no template, just a bit of Bootstrap) to not only showcase myself but also to practice and enhance my web 
+                                development. It will be expanded as time goes on.">
+                                Description</button>
+                                <a href="https://github.com/JavierTaylor/javiertaylor.github.io" target="_blank" class="btn btn-primary" role="button">Site Code</a></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="misc/ios.png" alt="..." id="thumb">
+                            <div class="caption">
+                            <center><h3>iOS App</h3></center>
+                                <center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+                                data-content="I am currently learning how to develop in XCode for iOS, and am making my first app. I will try to release it soon. In the 
+                                meantime, just try to imagine the best iOS app you can think of and multiply it by 10. That is probably not what you will get, but the
+                                real nature of this project is a closely guarded corporate secret, so all you have for now is your imagination.">
+                                Description</button></center>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <br>
+                <font size="3"><p>I have included larger projects that I have worked on, discluding small bits of code and samples of my programming. To see all of my public code, 
+                check out my <a href="https://github.com/JavierTaylor" id="link" target="_blank">GitHub</a> account.</p></font>
+            </div>
+            <br><br>
 
-			<div class="boxed" id="projects">
-				<center><h1>Projects</h1></center>
-				<hr>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img src="misc/notepad.png" alt="..." id="thumb">
-							<div class="caption">
-							<center><h3>NotePad</h3></center>
-								<center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="NotePad is an Android app where you can create, edit, and share notes on your phone easily.">
-								Description</button>
-								<a href="http://javiertaylor.github.io/NotePad/" target="_blank" class="btn btn-primary" role="button">Project Site</a></center>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img src="misc/web.png" alt="..." id="thumb">
-							<div class="caption">
-							<center><h3>Personal Website</h3></center>
-								<center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="Obviously, you have seen my website. But, have you seen the code for it? Just click to the right or go to my GitHub. I made this
-								site essentially from scratch (no template, just a bit of Bootstrap) to not only showcase myself but also to practice and enhance my web 
-								development. It will be expanded as time goes on.">
-								Description</button>
-								<a href="https://github.com/JavierTaylor/javiertaylor.github.io" target="_blank" class="btn btn-primary" role="button">Site Code</a></center>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img src="misc/ios.png" alt="..." id="thumb">
-							<div class="caption">
-							<center><h3>iOS App</h3></center>
-								<center><button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-								data-content="I am currently learning how to develop in XCode for iOS, and am making my first app. I will try to release it soon. In the 
-								meantime, just try to imagine the best iOS app you can think of and multiply it by 10. That is probably not what you will get, but the
-								real nature of this project is a closely guarded corporate secret, so all you have for now is your imagination.">
-								Description</button></center>
-							</div>
-						</div>
-					</div>					
-				</div>
-				<br>
-				<font size="3"><p>I have included larger projects that I have worked on, discluding small bits of code and samples of my programming. To see all of my public code, 
-				check out my <a href="https://github.com/JavierTaylor" id="link" target="_blank">GitHub</a> account.</p></font>
-			</div>
-			<br><br>
-
-			<div class="boxed" id="contact">
-				<center><h1>Contact Me</h1></center>
-				<hr>
-				<div class="enclose">
-					<form class="next" onsubmit="return onSubmitForm();" method="post" name="form" action="https://formspree.io/javierat@umich.edu">
-						<label for="personName">Name:</label>
-						<input class="form-control" type="text" id="personName" ng-model="yourName" placeholder="Your Name" required="true">
-						<label for="email">Email:</label>
-						<input class="form-control" type="email" id="email" ng-model="theEmail" placeholder="Your Email" required="true" name="_replyto">
-						<label for="subject">Subject:</label>
-						<input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true" name="subject">
-						<label for="subject">7+16?:</label>
-						<input class="form-control" type="number" id="num" ng-model="security" placeholder="Do some math" required="true" name="math">
-						<label for="subject" id="phoneNumLabel">Are you a bot? If no, do not fill in</label>
-						<input class="form-control" type="text" id="phoneNumber" ng-model="phoneNumber" name="phoneNumber">
-						<br>
-						<label for="comment">Message:</label> 
-						<textarea class="form-control" type="text" rows="5" id="comment" name="body">
+            <div class="boxed" id="contact">
+                <center><h1>Contact Me</h1></center>
+                <hr>
+                <div class="panel panel-default">
+                    <center>
+                        <a id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank"><img src="misc/linkedin.png" width="65"></a>
+                        <a id="link" href="mailto:javierat@umich.edu"><img src="misc/mail.png" width="65"></a>
+                        <a id="link" href="https://github.com/JavierTaylor" target="_blank"><img src="misc/github.png" width="65"></a>
+                    </center>
+                    <br>
+                    <form onsubmit="return onSubmitForm();" method="post" name="form" action="https://formspree.io/javierat@umich.edu">
+                        <label for="personName">Name:</label>
+                        <input class="form-control" type="text" id="personName" ng-model="yourName" placeholder="Your Name" required="true">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" id="email" ng-model="theEmail" placeholder="Your Email" required="true" name="_replyto">
+                        <label for="subject">Subject:</label>
+                        <input class="form-control" type="text" id="subject" ng-model="theSubject" placeholder="Message Subject" required="true" name="subject">
+                        <label for="subject">7+16?:</label>
+                        <input class="form-control" type="number" id="num" ng-model="security" placeholder="Do some math" required="true" name="math">
+                        <label for="subject" id="phoneNumLabel">Are you a bot? If no, do not fill in</label>
+                        <input class="form-control" type="text" id="phoneNumber" ng-model="phoneNumber" name="phoneNumber">
+                        <br>
+                        <label for="comment">Message:</label> 
+                        <textarea class="form-control" type="text" rows="5" id="comment" name="body">
 Hello Javier,
-	My name is {{yourName}} and I am contacting you because 
-						</textarea>
-						<br>
-						<input class="btn btn-primary" type="submit" value="Submit Contact">
-					</form>
-					<div class="info">
-						<h4>Email:</h4>javierat (at) umich.edu<br><br>
-						<h4>Phone:</h4>(Seven 34) 256-Zero 957<br><br>
-						<h4>GitHub:</h4><a id="link" href="https://github.com/JavierTaylor" target="_blank">github.com/JavierTaylor</a><br>
-						<h4>Linkedin:</h4><a id="link" href="https://www.linkedin.com/in/JavierTaylor" target="_blank">linkedin.com/in/JavierTaylor</a>
-					</div>
-				</div>
-			</div><br>
-			</center>
-		</div>
-	</body>
+    My name is {{yourName}} and I am contacting you because 
+                        </textarea>
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Submit Contact">
+                    </form>
+                </div>
+            </div><br>
+            </center>
+        </div>
+    </body>
 </html>
