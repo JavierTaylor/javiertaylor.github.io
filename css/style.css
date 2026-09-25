@@ -89,6 +89,7 @@ body {
 div.boxed {
     text-align: left;
     color: black;
+    font-size: 16px;
 }
 
 #link {
